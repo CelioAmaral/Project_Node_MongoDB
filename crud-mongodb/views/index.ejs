@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <p>Welcome to <%= title %>
+  </p>
+  <form action="save" method="post">
+    <p>
+      <label>Nome:
+        <input type="text" name="name" />
+      </label>
+    </p>
+    <p>
+      <label>Idade:
+        <input type="number" name="age" />
+      </label>
+    </p>
+    <p>
+      <input type="submit" value="Salvar" />
+    </p>
+  </form>
+</body>
+
 </html>
