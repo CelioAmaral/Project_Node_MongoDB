@@ -14,6 +14,13 @@
   </h1>
   <p>Welcome to <%= title %>
   </p>
+  <ul>
+    <% for(let i=0; i < result.length; i++) { %>
+      <li>
+        <%= result(i).name %>
+      </li>
+      <% } %>
+  </ul>
   <form action="save" method="post">
     <p>
       <label>Nome:
