@@ -18,6 +18,12 @@ async function insert(customer) {
     return db.collection("customers").insertOne(customer);
 }
 
+async function find() {
+    const db = await connect();
+    return db.collection("customers").find().toArray();
+}
+
 module.exports = {
-    insert
+    insert,
+    find,
 }
