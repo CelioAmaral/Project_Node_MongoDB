@@ -1,11 +1,12 @@
 #!/usr/bin/env node
+require("dotenv").config();
 
 /**
  * Module dependencies.
  */
 
 var app = require('../app');
-var debug = require('debug')('crud-mongodb:server');
+var debug = require('debug')('nodejs-mongodb:server');
 var http = require('http');
 
 /**
